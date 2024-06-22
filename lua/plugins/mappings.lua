@@ -5,7 +5,11 @@ return {
     opts = {
       mappings = {
         -- first key is the mode
-        n = {},
+        n = {
+          ["<Leader>Lr"] = { ":luafile %<CR>", desc = "Run current file with lua" },
+
+          ["<Leader><Space>"] = { ":Telescope commands<CR>", desc = "Run current file with lua" },
+        },
         t = {
           ["<Esc>"] = { "<C-\\><C-n>", desc = "Exit terminal edit mode" },
           --["<C-w>k"] = { "<C-\\><C-n><C-w>", desc = "Exit terminal edit mode" },
