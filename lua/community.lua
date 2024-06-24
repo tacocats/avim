@@ -9,5 +9,5 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.motion.leap-nvim" },
 }
