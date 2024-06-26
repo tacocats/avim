@@ -1,11 +1,17 @@
+-- Leader and localleader is ;
+local Leader2 = "<Space>"
+
 return {
   {
     "AstroNvim/astrocore",
     ---@type AstroCoreOpts
     opts = {
+
       mappings = {
         -- first key is the mode
         n = {
+          [Leader2 .. Leader2] = { ":Telescope commands<CR>" },
+          ["<Leader>L"] = { name = "Lua" },
           ["<Leader>Lr"] = { ":luafile %<CR>", desc = "Run current file with lua" },
 
           ["<Leader><Space>"] = { ":Telescope commands<CR>", desc = "Run current file with lua" },
